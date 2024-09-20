@@ -29,8 +29,8 @@ MonoBehaviour:
     TextBody: Open the NianticLabs sample Scenes.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Samples
-    PingObjectGuid: 375703337f8a146cb8d231d8f74447bc
+    PingObjectName: Scene
+    PingObjectGuid: ca5e717807acf4f0eac815ac612d2331
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
@@ -38,7 +38,7 @@ MonoBehaviour:
     TextBody: Open & edit the starter Scene.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Scenes
+    PingObjectName: Scene
     PingObjectGuid: dcafdf5a1a9bd3c40928144ef0a56347
     MenuItemName: 
     MenuItemPath: 

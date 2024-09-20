@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/3rdParty/NianticLabs/LightShip/LightShip/Samples/Home/Scenes/Home.unity
     guid: ca5e717807acf4f0eac815ac612d2331
   - enabled: 1
+    path: Assets/Scenes/UserDemo_01.unity
+    guid: 72f7cde6697d6214e927b487784a8bea
+  - enabled: 1
+    path: Assets/Scenes/UserDemo_02.unity
+    guid: bb08ada693fb6a541a8fd9f937455a4d
+  - enabled: 1
     path: Assets/3rdParty/NianticLabs/LightShip/LightShip/Samples/Depth/Scenes/Occlusion.unity
     guid: 331912c5e833c4a10a84546c00090b66
   - enabled: 1

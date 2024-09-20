@@ -26,9 +26,26 @@ The project includes best practices for **project structure** and **C# coding st
 
 ## Table of Contents
 
+1. [Configuration](#configuration)
 1. [Overview](#features)
 1. [Resources](#resources)
 1. [Credits](#credits)
+
+<BR>
+
+<BR>
+
+## Configuration
+
+1. Follow the "Getting Started" above
+2. Use Unity Menu: `Window -> RMC -> Open ReadMe ...`
+3. Follow that interactive guide
+4. Enjoy!
+
+<BR>
+
+<img width = "400" src="./Unity/Assets/Documentation/Images/readme.png" />
+
 
 <BR>
 
@@ -39,6 +56,7 @@ The project includes best practices for **project structure** and **C# coding st
 ### Features
 
 This project is a living template. It showcases the best practices and coding standards for many common workflows.
+
 
 
 #### 1. Starter Scene

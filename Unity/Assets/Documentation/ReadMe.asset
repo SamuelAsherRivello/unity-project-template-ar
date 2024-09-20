@@ -12,21 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cf3b74950b299408cc642cd2423789, type: 3}
   m_Name: ReadMe
   m_EditorClassIdentifier: 
-  Title: My AR Project
+  Title: Unity Template For AR
   Icon: {fileID: 2800000, guid: 7c0822b0780ca4a74b276e50db2c68a3, type: 3}
   Sections:
   - TextHeading: Welcome
     TextSubheading: 
-    TextBody: This project is created from the Unity Project Template.
+    TextBody: 'This project is created from the Unity Project Template. '
     LinkName: Github.com/SamuelAsherRivello/unity-project-template-ar
     LinkUrl: https://github.com/SamuelAsherRivello/unity-project-template-ar
     PingObjectName: 
     PingObjectGuid: 
     MenuItemName: 
     MenuItemPath: 
-  - TextHeading: Configuration
+  - TextHeading: Configure
     TextSubheading: 
-    TextBody: Ensure the project is setup.
+    TextBody: It's best to playtest on your AR device (e.g. mobile phone).\n\nYou
+      may use any Lightship-compatible target platforms. \nHowever, it is EASIEST
+      to use an <B>Android</B> phone.\n\nMost setup is already completed for you.\n\nFinalize
+      with these steps;
     LinkName: 1. Get 'API Key' From Lightship Site
     LinkUrl: https://lightship.dev/account/dashboard
     PingObjectName: 
@@ -42,9 +45,29 @@ MonoBehaviour:
     PingObjectGuid: 
     MenuItemName: 2. Add 'API Key' To Lightship Settings
     MenuItemPath: Lightship/Settings
-  - TextHeading: Getting Started
+  - TextHeading: 
     TextSubheading: 
-    TextBody: Experiment to learn more about AR.
+    TextBody: 
+    LinkName: 3. 'Patch & Run' on Android via USB
+    LinkUrl: https://docs.unity3d.com/Manual/android-AppPatching.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: Build
+    TextSubheading: 
+    TextBody: Use 'Build And Run' once. This builds slowly.\n\nThen use 'Patch And
+      Run' forever after.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: Open Build Settings
+    MenuItemPath: File/Build Settings...
+  - TextHeading: Develop
+    TextSubheading: 
+    TextBody: After you have built with success, you can experiment with the provided
+      samples Scenes and starter Scenes.
     LinkName: 
     LinkUrl: 
     PingObjectName: 
@@ -56,16 +79,16 @@ MonoBehaviour:
     TextBody: Open the NianticLabs sample Scenes.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Scene
+    PingObjectName: Scenes
     PingObjectGuid: ca5e717807acf4f0eac815ac612d2331
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Open & edit the starter Scene.
+    TextBody: Open & edit the starter Scenes.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Scene
+    PingObjectName: Scenes
     PingObjectGuid: dcafdf5a1a9bd3c40928144ef0a56347
     MenuItemName: 
     MenuItemPath: 

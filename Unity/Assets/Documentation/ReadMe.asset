@@ -27,11 +27,20 @@ MonoBehaviour:
   - TextHeading: Configuration
     TextSubheading: 
     TextBody: Ensure the project is setup.
+    LinkName: 1. Get 'API Key' From Lightship Site
+    LinkUrl: https://lightship.dev/account/dashboard
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: 
     LinkName: 
     LinkUrl: 
     PingObjectName: 
     PingObjectGuid: 
-    MenuItemName: Add 'API Key' To Lightship Settings
+    MenuItemName: 2. Add 'API Key' To Lightship Settings
     MenuItemPath: Lightship/Settings
   - TextHeading: Getting Started
     TextSubheading: 

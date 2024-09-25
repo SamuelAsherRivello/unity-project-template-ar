@@ -20,7 +20,7 @@ MonoBehaviour:
   _useLightshipScanning: 1
   _useLightshipPersistentAnchor: 1
   _useLightshipObjectDetection: 1
-  _unityLogLevel: 3
+  _unityLogLevel: 4
   _fileLogLevel: 5
   _stdoutLogLevel: 5
   _lightshipSimulationParams:

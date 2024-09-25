@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4642e525d3f4d3f953a823b0150bf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetFrameRate: 20
+  _targetFrameRate: 10
   _isStabilizationEnabled: 0
 --- !u!1 &892405172
 GameObject:

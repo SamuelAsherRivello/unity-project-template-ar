@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Niantic.Lightship.AR.ObjectDetection;
+using Niantic.Lightship.AR.XRSubsystems;
 using RMC.MyProject.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -30,6 +32,9 @@ namespace RMC.MyProject.Scenes
         [SerializeField] 
         private ARObjectDetectionManager _arObjectDetectionManager;
 
+        private float  _lastUpdateTimeSeconds = 0;
+        private const float LastUpdateTimeMaxSeconds = 3f;
+        
         //  Unity Methods ---------------------------------
         protected void Start()
         {
@@ -66,15 +71,36 @@ namespace RMC.MyProject.Scenes
         //  Event Handlers --------------------------------
         private void OnObjectDetectionsUpdated(ARObjectDetectionsUpdatedEventArgs obj)
         {
-            Debug.Log(("OnObjectDetectionsUpdated Results: " + obj.Results.Count));
+            //Update only once per X (Cosmetic reasons)
+            if (Time.timeSinceLevelLoad - _lastUpdateTimeSeconds < LastUpdateTimeMaxSeconds)
+            {
+                return;
+            }
+            _lastUpdateTimeSeconds = Time.timeSinceLevelLoad;
+
+            List<XRObjectCategorization> filtered = new List<XRObjectCategorization>(0);
 
             string message = "";
             foreach (var result in obj.Results)
             {
                 foreach (var xrObjectCategorization in result.GetConfidentCategorizations())
                 {
-                    message += $"{xrObjectCategorization.CategoryName}({xrObjectCategorization.Confidence})\n";
+                    //Add ONE entry max for each name with highest confidence
+                    var foundInFiltered = filtered.Find(x => x.CategoryName == xrObjectCategorization.CategoryName);
+                    
+                    if (foundInFiltered.Equals(default(XRObjectCategorization)) || foundInFiltered.Confidence < xrObjectCategorization.Confidence)
+                    {
+                        filtered.Add(xrObjectCategorization);
+                    }
                 }
+            }
+            
+            Debug.Log("OnObjectDetectionsUpdated() Results: " + obj.Results.Count +  " vs filtered: " + filtered.Count);
+            //Show filtered
+            foreach (var result in filtered)
+            {
+           
+                message += $"{result.CategoryName}({result.Confidence})\n";
             }
 
             SetTitle(message);
@@ -82,7 +108,7 @@ namespace RMC.MyProject.Scenes
 
         private void OnMetadataInitialized(ARObjectDetectionModelEventArgs obj)
         {
-            Debug.Log(("OnMetadataInitialized CategoryNames: " + obj.CategoryNames.Count));
+            Debug.Log(("OnMetadataInitialized() CategoryNames: " + obj.CategoryNames.Count));
         }
     }
 }

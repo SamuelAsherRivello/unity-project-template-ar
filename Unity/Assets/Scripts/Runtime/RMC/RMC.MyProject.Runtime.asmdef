@@ -1,7 +1,9 @@
 {
     "name": "RMC.MyProject.Runtime",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:ebf051e8066a449148e51cebff289cdd"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

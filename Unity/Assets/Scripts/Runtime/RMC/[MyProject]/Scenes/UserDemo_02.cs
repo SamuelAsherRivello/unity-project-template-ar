@@ -13,7 +13,7 @@ namespace RMC.MyProject.Scenes
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Scene01_Intro : MonoBehaviour
+    public class UserDemo_02 : MonoBehaviour
     {
         //  Events ----------------------------------------
 
@@ -33,10 +33,9 @@ namespace RMC.MyProject.Scenes
             Debug.Log($"{GetType().Name}.Start()");
             
             // Set UI Text
+            HudUI.SetTitle(SceneManager.GetActiveScene().name + "\nDetect Table");
             HudUI.SetScore("Score: 000");
-            HudUI.SetLives("Lives: 003");
-            HudUI.SetInstructions("Instructions...");
-            HudUI.SetTitle(SceneManager.GetActiveScene().name);
+            
         }
 
 

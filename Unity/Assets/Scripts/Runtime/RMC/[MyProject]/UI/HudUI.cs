@@ -20,8 +20,6 @@ namespace RMC.MyProject.UI
         //  Properties ------------------------------------
         public Label UpperLeftLabel { get { return _uiDocument?.rootVisualElement.Q<Label>("UpperLeftLabel"); }}
         public Label UpperRightLabel { get { return _uiDocument?.rootVisualElement.Q<Label>("UpperRightLabel"); }}
-        public Label LowerLeftLabel { get { return _uiDocument?.rootVisualElement.Q<Label>("LowerLeftLabel"); }}
-        public Label LowerRightLabel { get { return _uiDocument?.rootVisualElement.Q<Label>("LowerRightLabel"); }}
 
 
         //  Fields ----------------------------------------
@@ -36,24 +34,13 @@ namespace RMC.MyProject.UI
         }
 
         //  Methods ---------------------------------------
-        public string SetLives(string message)
+        public string SetTitle(string message)
         {
             return UpperLeftLabel.text = message;
         }
-        
         public string SetScore(string message)
         {
             return UpperRightLabel.text = message;
-        }
-        
-        public string SetInstructions(string message)
-        {
-            return LowerLeftLabel.text = message;
-        }
-        
-        public string SetTitle(string message)
-        {
-            return LowerRightLabel.text = message;
         }
 
 
